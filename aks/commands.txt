@@ -37,7 +37,7 @@ az group create --name myResourceGroup --location westeurope
 Create an Azure Container Registry
 az acr create --resource-group myResourceGroup --name shoppingacrat --sku Basic
 --
-Enable Admin Account for ACR Pull
+Enable Admin Account for ACR Pull  shoppingacrat > Access keys
 az acr update -n shoppingacrat --admin-enabled true
 --
 Log in to the container registry
@@ -97,6 +97,11 @@ kubectl config current-context
 kubectl config use-context gcpcluster-k8s-1
 	Switched to context "gcpcluster-k8s-1"
 --
+
+create Secre
+
+kubectl create secret docker-registry acr-secret --docker-server=shoppingacrat.azurecr.io --docker-username=shoppingacrat --docker-password=FbBogIMQWWqJT2kaPvVLIZ3P9U3jcQt --docker-email=ahmet@hotmail.com
+
 Deploy microservices to AKS
 
 kubectl apply -f .\aks\
@@ -104,3 +109,5 @@ kubectl apply -f .\aks\
 Clean All AKS and Azure Resources
 
 az group delete --name myResourceGroup --yes --no-wait
+
+
