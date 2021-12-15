@@ -111,3 +111,6 @@ Clean All AKS and Azure Resources
 az group delete --name myResourceGroup --yes --no-wait
 
 
+shoppingacrat.azurecr.io/shoppingclient:v1
+
+shoppingacrat.azurecr.io/shoppingapi:v1
