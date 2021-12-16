@@ -94,8 +94,8 @@ Check Kube Config
 
 kubectl config get-contexts
 kubectl config current-context
-kubectl config use-context gcpcluster-k8s-1
-	Switched to context "gcpcluster-k8s-1"
+kubectl config use-context myAKSCluster
+	Switched to context "myAKSCluster"
 --
 
 create Secre
