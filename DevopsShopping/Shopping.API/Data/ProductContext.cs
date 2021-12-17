@@ -77,7 +77,7 @@ namespace Shopping.API.Data
                 },
                 new Product()
                 {
-                    Name = "LG G7 ThinQ 10",
+                    Name = "LG G7 ThinQ EndofCourse",
                     Description =
                         "This phone is the company's biggest change to its flagship smartphone in years. It includes a borderless.",
                     ImageFile = "product-6.png",
